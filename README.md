@@ -34,6 +34,15 @@ GRANT ALL PRIVILEGES ON *.* TO 'zabbix'@'%' WITH GRANT OPTION;
 zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
 ```
 
+## export and import database 
+
+```bash
+ mysqldump -u root -p zabbix > dump.sql
+```
+```bash
+ mysqldump -u root -p zabbix < dump.sql
+```
+
 
 ## Creating user with PostgreSQL 
 
